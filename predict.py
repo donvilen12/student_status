@@ -5,7 +5,8 @@ import pickle
 # Load model
 def load_model(model_name):
     if model_name == 'Logistic Regression':
-        model = pickle.load(open('models/no_resampling_logistic_regression_model.pkl', 'rb'))
+        model = pickle.load(open('./no_resampling_logistic_regression_model.pkl', 'rb'))
+        # model = pickle.load(open('models/no_resampling_logistic_regression_model.pkl', 'rb'))        
     elif model_name == 'SVM':
         model = pickle.load(open('models/no_resampling_svm_model.pkl', 'rb'))
     return model
